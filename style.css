@@ -42,6 +42,7 @@ h1{
 main{
     background-color: var(--color-main);
     margin: 10px 12%;
+    line-height: 1.2em;
 
 }
 
@@ -87,18 +88,33 @@ section{
 
 .contenedor_habilidades, .contenedor_educacion{
     display:flex;
+    justify-content: space-between;
 }
-
-.card {
+.card_e,.card_h {
     display: row;
     background: var(--color-acento);
     border-radius: 5px;
-    margin: 20px 20px 20px 0px;
+    margin: 10px 20px 10px 0px;
     width: calc(25% - 30px);
-    height: 150px;
+    height: 220px;
     padding: 20px;
     text-align: center;
     color: black;
+}
+.card_e{
+    flex-grow:2;
+}
+.foto_usm, .foto_alura,.foto_ingles,.foto_web{
+    height:80px;
+}
+.foto_duoc{
+    width: 220px;
+    padding-bottom: 1em;
+}
+
+.foto_office,.foto_sap{
+    height:60px;
+    padding-bottom: 1em;
 }
 
 footer{
