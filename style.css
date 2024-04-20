@@ -91,7 +91,6 @@ section{
     justify-content: space-between;
 }
 .card_e,.card_h {
-    display: row;
     background: var(--color-acento);
     border-radius: 5px;
     margin: 10px 20px 10px 0px;
@@ -121,4 +120,46 @@ footer{
     background-color:var(--color-header);
     text-align: center;
     padding: 1em;
+}
+
+@media (max-width:480px){
+    body{
+        width: 100%;
+        font-size: 14px;
+    }
+    header{
+        display: flex;
+        font-size: 1em;
+        padding: 1em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        top:2%;
+
+    }
+    .titulo_nombre{
+        font-size: 1em;
+        padding: 1em 0 0 1%;
+    }
+    .contenedor_nav{
+        display:flex;
+
+    }
+    .contenido_nav{
+        font-size: 0.8em;
+        padding: 1% 2%;
+    }
+    main{
+        margin: 0;
+    }
+    .foto_perfil{
+        width: 70%;
+        float:none;
+    }
+    .contenedor_educacion,.contenedor_habilidades{
+        overflow:scroll;
+    }
+    .card_e,.card_h{
+        width: 200px;
+    }
 }
