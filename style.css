@@ -90,18 +90,26 @@ section{
     display:flex;
     justify-content: space-between;
 }
-.card_e,.card_h {
+.card_e,.card_h,.card_p{
     background: var(--color-acento);
     border-radius: 5px;
     margin: 10px 20px 10px 0px;
-    width: calc(25% - 30px);
-    height: 220px;
     padding: 20px;
     text-align: center;
     color: black;
 }
+.card_e,.card_h{
+    width: calc(25% - 30px);
+    height: 220px;
+}
 .card_e{
     flex-grow:2;
+}
+.card_p{
+    width: 90%;
+}
+.gif_opl,.gif_nebido{
+    animation-play-state: paused
 }
 .foto_usm, .foto_alura,.foto_ingles,.foto_web{
     height:80px;
@@ -156,8 +164,10 @@ footer{
         width: 70%;
         float:none;
     }
-    .contenedor_educacion,.contenedor_habilidades{
+    .contenedor_educacion,.contenedor_habilidades,.contenedor_proyectos{
         overflow:scroll;
+        object-fit: cover;
+        
     }
     .card_e,.card_h{
         width: 200px;
