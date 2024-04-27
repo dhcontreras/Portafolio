@@ -159,6 +159,7 @@ footer{
     }
     main{
         margin: 0;
+        font-size: 0.6em;
     }
     .foto_perfil{
         width: 70%;
